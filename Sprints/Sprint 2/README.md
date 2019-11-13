@@ -31,3 +31,5 @@ Puntos Bajos:
 	Estimacion incorrecta de tareas.
 	Pocas interacciones presenciales
 	
+Gráfico de velocidad del sprint:
+![Gráfico Estimación](https://github.com/bcoronel-fusap/deportesunq-backend/blob/master/Sprints/Sprint%202/grafico%20estimacion.png)
