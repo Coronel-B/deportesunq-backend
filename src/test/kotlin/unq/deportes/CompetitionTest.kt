@@ -16,7 +16,6 @@ class CompetitionTest {
 
     @Test
     fun `WHEN findAll() is called SHOULD return a non-empty collection and OK httpstate`(){
-        competitionController.save("CompTest", 2019, "UNQ")
         val result = competitionController.findAll()
         assertEquals(HttpStatus.OK, result.statusCode)
         assertNotNull(result.body?.firstOrNull())
@@ -24,8 +23,7 @@ class CompetitionTest {
 
     @Test
     fun `WHEN findDetailsOfId() is called with an id THEN SHOULD return CompetitionDetails of the id and OK httpstate`(){
-        competitionController.save("CompTest", 2019, "UNQ")
-        val result = competitionController.findDetailsOfId(1L)
+        val result = competitionController.findDetailsOfId(1)
         assertEquals(HttpStatus.OK, result.statusCode)
         assertEquals(1L, result.body?.getId())
     }

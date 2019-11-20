@@ -1,19 +1,28 @@
 package unq.deportes.model
 
-class CompetitionDetailItem(
-        private val position: Int,
-        private val team: TeamDetails)
-{
-    fun getPosition(): Int = position
-    fun getTeam() : TeamDetails = team
-}
+import java.io.Serializable
+import javax.persistence.*
 
-class TeamDetails(
-        private val id:Long,
-        private val alias: String,
-        private val fullName: String
-){
-    fun getId(): Long = id
-    fun getAlias(): String = alias
-    fun getFullName(): String = fullName
+
+@Entity
+@Table(name = "CompetitionPosition")
+class CompetitionDetailItem(
+        @Id
+        @ManyToOne
+        @JoinColumn(name = "CompetitionId")
+        private val competitionId: Competition,
+        @Id
+        @Column(name = "Position")
+        private val position: Int,
+        @Id
+        @ManyToOne
+        @JoinColumn(name = "Team")
+        private val team: Team): Serializable
+{
+    companion object {
+        private const val serialVersionUID = 20191120L
+    }
+    fun getCompetitionId(): Competition = competitionId
+    fun getPosition(): Int = position
+    fun getTeam() : Team = team
 }
