@@ -5,10 +5,10 @@ import org.springframework.data.repository.CrudRepository
 import org.springframework.data.repository.query.Param
 import org.springframework.stereotype.Repository
 import unq.deportes.model.Competition
-import unq.deportes.model.CompetitionDetailItem
+import unq.deportes.model.CompetitionPositions
 
 @Repository
 interface CompetitionRepository : CrudRepository<Competition, Long> {
-    @Query("select t.id, t.alias, t.fullName, t.position from Team t where t.competition_id = :id order by t.id")
-    fun findDetailItemsOf(@Param("id") id: Long):List<CompetitionDetailItem>
+    @Query("select new unq.deportes.model.CompetitionPositions(cp.position, t) from Team t, CompetitionDetailItem cp where cp.competitionId.id = :id and t.id = cp.team order by t.id")
+    fun findDetailItemsOf(@Param("id") id: Long):List<CompetitionPositions>
 }

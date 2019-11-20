@@ -6,16 +6,16 @@ import javax.persistence.*
 @Table(name = "Team")
 class Team(
         @Id @GeneratedValue(strategy = GenerationType.AUTO)
+        @Column(name = "ID")
         private val id: Long,
+        @Column(name = "FullName")
         private val fullName: String,
-        private val alias: String,
-        private val competition_id: Long,
-        private val position: Int)
+        @Column(name = "Alias")
+        private val alias: String)
 {
-    private constructor() : this(0, "", "", 0, 0)
+    private constructor() : this(0, "", "")
     fun getId(): Long = id
     fun getFullName(): String = fullName
     fun getAlias(): String = alias
-    fun getCompetitionId(): Long = competition_id
-    fun getPosition(): Int = position
+
 }
