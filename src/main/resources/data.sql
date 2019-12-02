@@ -30,6 +30,13 @@ INSERT INTO COMPETITION_POSITION VALUES (3, 1, 2)
 INSERT INTO COMPETITION_POSITION VALUES (3, 2, 1)
 INSERT INTO COMPETITION_POSITION VALUES (3, 3, 3)
 
+// COMPETITION DETAILS ITEM ----------------------------------------------------
+
+
+
+
+// JUGADORES ----------------------------------------------------
+
 INSERT INTO Jugador(ID, Name, Surname, Goals, Shirt, Team) VALUES(1, 'Martin', 'Demonchelos', 5, 7, 1)
 INSERT INTO Jugador(ID, Name, Surname, Goals, Shirt, Team) VALUES(2, 'Nicolas', 'Bertiso', 3, 5, 1)
 INSERT INTO Jugador(ID, Name, Surname, Goals, Shirt, Team) VALUES(3, 'Lucas', 'Birgila', 12, 9, 1)
@@ -71,3 +78,16 @@ INSERT INTO Jugador(ID, Name, Surname, Goals, Shirt, Team) VALUES(32, 'Martin', 
 INSERT INTO Jugador(ID, Name, Surname, Goals, Shirt, Team) VALUES(33, 'Martin', 'Demonchelos', 5, 7, 7)
 INSERT INTO Jugador(ID, Name, Surname, Goals, Shirt, Team) VALUES(34, 'Martin', 'Demonchelos', 5, 7, 7)
 INSERT INTO Jugador(ID, Name, Surname, Goals, Shirt, Team) VALUES(35, 'Martin', 'Demonchelos', 5, 7, 7)
+
+// Partidos -------------------------------------------------------------
+
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (1,'UNQ','UNDAV',5,1,'11/08/2019','Liguilla 2019', 'Fecha 4')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (2,'UNQ','UTN',4,4,'18/08/2019','Copa 2019', 'Octavos')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (3,'UNQ','UNAJ',2,7,'25/08/2019','Liguilla 2019', 'Fecha 5')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (4,'UNQ','UBA',3,3,'2/09/2019','Copa 2019', 'Cuartos')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (5,'UNQ','UCALP',5,7,'11/09/2019','Liguilla 2019', 'Fecha 6')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (6,'UNQ','UNLP',10,1,'19/09/2019','Liguilla 2019', 'Fecha 7')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (7,'UNQ','UNAJ',7,1,'23/09/2019','Copa 2019', 'Semi')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (8,'UNQ','UBAV',3,6,'12/10/2019','Liguilla 2019', 'Fecha 8')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (9,'UNQ','UNDAV',2,4,'11/11/2019','Liguilla 2019', 'Fecha 9')
+INSERT INTO Match(ID, Local, Visitante, Goleslocal, Golesvisitante, Fecha, Competencia, Instancia) VALUES (10,'UNQ','UCALP',3,1,'27/11/2019','Liguilla 2019', 'Fecha 10')
