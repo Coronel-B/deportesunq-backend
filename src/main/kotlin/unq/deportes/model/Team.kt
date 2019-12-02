@@ -1,6 +1,5 @@
 package unq.deportes.model
 
-import java.math.BigInteger
 import javax.persistence.*
 
 @Entity
@@ -12,7 +11,7 @@ class Team(
         @Column(name = "Name")
         private val name: String,
         @Column(name = "Campeonatos")
-        private val campeonatos: Number,
+        private val campeonatos: Int,
         @Column(name = "Entrenador")
         private val entrenador: String,
         @Column(name = "Fundacion")
@@ -25,8 +24,8 @@ class Team(
     private constructor() : this(0, "", 0,"","","")
     fun getId(): Long = id
     fun getName(): String = name
-    fun getCampeonatos(): Number = campeonatos
+    fun getCampeonatos(): Int = campeonatos
     fun getEntrenador():String = entrenador
-    fun  getFundacion():String = fundacion
+    fun getFundacion():String = fundacion
     fun getUrl():String = url
 }

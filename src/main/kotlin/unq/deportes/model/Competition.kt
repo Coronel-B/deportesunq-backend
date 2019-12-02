@@ -1,7 +1,5 @@
 package unq.deportes.model
 
-import com.google.common.base.Strings
-import org.hibernate.type.descriptor.sql.VarcharTypeDescriptor
 import javax.persistence.*
 
 @Entity
@@ -16,10 +14,10 @@ class Competition(
         private val year: Int,
         @Column(name = "Champion")
         private val champion: String,
-        @Column(name = "Url")
-        private val url: String,
         @Column(name = "Sede")
-        private val sede: String
+        private val sede: String,
+        @Column(name = "Url")
+        private val url: String
 )
 {
         private constructor() : this(0, "", 0, "","","")
