@@ -9,7 +9,7 @@ import javax.persistence.*
 class CompetitionDetailItem(
         @Id
         @ManyToOne
-        @JoinColumn(name = "CompetitionId")
+        @JoinColumn(name = "Competitionid")
         private val competitionId: Competition,
         @Id
         @Column(name = "Position")

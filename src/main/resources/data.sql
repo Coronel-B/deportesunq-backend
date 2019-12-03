@@ -17,10 +17,13 @@ INSERT INTO Team(ID, Name, Campeonatos, Entrenador, Fundacion, Url) VALUES(5, 'U
 INSERT INTO Team(ID, Name, Campeonatos, Entrenador, Fundacion, Url) VALUES(6, 'UNLP', 9 , 'Damian Formosa','1997','/api/teams/6')
 INSERT INTO Team(ID, Name, Campeonatos, Entrenador, Fundacion, Url) VALUES(7, 'UBA', 14 , 'Leonardo Tini','1994','/api/teams/7')
 
-
-INSERT INTO COMPETITION_POSITION VALUES (1, 1, 1)
-INSERT INTO COMPETITION_POSITION VALUES (1, 2, 2)
-INSERT INTO COMPETITION_POSITION VALUES (1, 3, 3)
+INSERT INTO COMPETITION_POSITION(Competitionid, Position,Team) VALUES (1, 1, 1)
+INSERT INTO COMPETITION_POSITION(Competitionid, Position,Team) VALUES (1, 2, 2)
+INSERT INTO COMPETITION_POSITION(Competitionid, Position,Team) VALUES (1, 3, 3)
+INSERT INTO COMPETITION_POSITION(Competitionid, Position,Team) VALUES (1, 4, 4)
+INSERT INTO COMPETITION_POSITION(Competitionid, Position,Team) VALUES (1, 5, 5)
+INSERT INTO COMPETITION_POSITION(Competitionid, Position,Team) VALUES (1, 6, 6)
+INSERT INTO COMPETITION_POSITION(Competitionid, Position,Team) VALUES (1, 7, 7)
 
 INSERT INTO COMPETITION_POSITION VALUES (2, 1, 3)
 INSERT INTO COMPETITION_POSITION VALUES (2, 2, 2)
