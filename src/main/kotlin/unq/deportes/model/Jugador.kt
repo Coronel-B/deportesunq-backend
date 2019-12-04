@@ -26,7 +26,7 @@ class Jugador(
     }
     fun getId(): Long = id
     fun getName(): String = name
-    fun getApelido(): String = apellido
+    fun getApellido(): String = apellido
     fun getGoles(): Int = goles
     fun getDorsal(): Int = dorsal
     fun getEquipo(): Team = equipo

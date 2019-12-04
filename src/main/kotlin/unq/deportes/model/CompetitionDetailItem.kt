@@ -11,9 +11,10 @@ class CompetitionDetailItem(
         @ManyToOne
         @JoinColumn(name = "CompetitionId")
         private val competitionId: Competition,
-        @Id
         @Column(name = "Position")
         private val position: Int,
+        @Column(name = "Points")
+        private val points: Int,
         @Id
         @ManyToOne
         @JoinColumn(name = "Team")
@@ -25,4 +26,5 @@ class CompetitionDetailItem(
     fun getCompetitionId(): Competition = competitionId
     fun getPosition(): Int = position
     fun getTeam() : Team = team
+    fun getPoints(): Int = points
 }

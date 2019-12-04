@@ -10,9 +10,11 @@ class CompetitionDetails(
 
 class CompetitionPositions(
         private val position: Int,
+        private val points: Int,
         private val team: Team)
 {
-    constructor(comp : CompetitionDetailItem): this(comp.getPosition(), comp.getTeam())
+    constructor(comp : CompetitionDetailItem): this(comp.getPosition(), comp.getPoints(), comp.getTeam())
     fun getPosition(): Int = position
     fun getTeam(): Team = team
+    fun getPoints(): Int = points
 }
