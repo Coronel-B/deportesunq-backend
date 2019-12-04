@@ -68,4 +68,4 @@
 
 	
 ## Gráfico de velocidad del sprint:
-![Gráfico Estimación](./Velocity_sp4.png)
+![Gráfico Estimación](./Velocity_sp4.PNG)
