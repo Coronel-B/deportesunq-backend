@@ -91,7 +91,6 @@ INSERT INTO COMPETITION_POSITION(COMPETITION_ID, Position, Points, Team) VALUES 
 INSERT INTO COMPETITION_POSITION(COMPETITION_ID, Position, Points, Team) VALUES (9, 7, 7, 1)
 
 
-
 // JUGADORES ----------------------------------------------------
 
 INSERT INTO Jugador(ID, Name, Surname, Goals, Shirt, Team) VALUES(1, 'Martin', 'Demonchelos', 5, 7, 1)
