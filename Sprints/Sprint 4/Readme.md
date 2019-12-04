@@ -65,3 +65,7 @@
 	> Complejidad de progrmacion en android.
 	
 	> Poca interaccion grupal en la semana debido a distintas situaciones individuales de cada uno.
+
+	
+## Gráfico de velocidad del sprint:
+![Gráfico Estimación](./Velocity_sp4.png)

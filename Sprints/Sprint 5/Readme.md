@@ -10,3 +10,7 @@
 	  ultimos.
 ### Puntos Baos:
 	- Problemas con resolucion de testing atumatizado en frontend.
+
+	
+## Gráfico de velocidad del sprint:
+![Gráfico Estimación](./Velocity_sp5.png)
